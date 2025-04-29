@@ -1,4 +1,3 @@
-velocidad = int(input("Ingrese la velocidad: "))
-temp = int(input("Ingrese el Tiempo: "))
-print()
-print("La distancia es:",(velocidad*temp))
+radio=int(input("Ingrese el radio: "))
+v = (4/3)*3.1416*radio**3
+print("El volumen de la esfera es: ",v)

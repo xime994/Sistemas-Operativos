@@ -1,6 +1,5 @@
-correctas=int(input("Ingrese la cantidad de respuestas correctas: "))
-incorrectas=int(input("Ingrese la cantidad de respuestas incorrectas: "))
-blanco=int(input("Ingrese la cantidad de respuestas en blanco: "))
-print()
-puntaje=(correctas*3)+(incorrectas*-1)+(blanco*0)
-print("El puntaje final es: ",puntaje)
+soles= float(input("Ingrese la cantidad de soles: "))
+dolares=soles*2.28
+euros=soles*3.84
+print("La cantidad de dolares es: ",dolares)
+print("La cantidad de euros es: ",euros)
