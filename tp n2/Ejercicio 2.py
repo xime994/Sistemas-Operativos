@@ -1,5 +1,3 @@
-n1=float(input("Ingrese la primer nota: "))
-n2=float(input("Ingrese la segunda nota: "))
-n3=float(input("Ingrese la tercer nota: "))
-print()
-print("El promedio es: ",(n1+n2+n3)/3)
+altura= float(input("Ingrese la altura del triangulo: "))
+perimetro=3*(2*altura/3**0.5)
+print("El perimetro del triangulo es: ",perimetro)

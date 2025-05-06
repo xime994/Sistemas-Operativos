@@ -1,5 +1,5 @@
-base=float(input("Base: "))
-alto=float(input("Alto: "))
-sup = base*alto
-per = 2*(base+alto)
-print("Superficie: ",sup," Perimetro: ",per)
+va=float(input("Ingrese la velocidad del cuerppo a: "))
+vb=float(input("Ingrese la velocidad del cuerppo b: "))
+distancia=float(input("Ingrese la distancia entre cuerpos: "))
+t=distancia/(va+vb)
+print("El tiempo en que se cruzan: ",t)
