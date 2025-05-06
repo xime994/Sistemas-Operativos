@@ -1,4 +1,4 @@
-t=float(input("ingrese el tiempo en segundos: "))
-d=float(input("ingrese la distancia en metros: "))
-v = d/t
-print("La velocidad es: ",v,"m/s")
+tiempo = float(input("ingrese el tiempo en segundos: "))
+distancia = float(input("ingrese la distancia en metros: "))
+v = distancia/tiempo
+print("La velocidad es: ", v, "m/s")
