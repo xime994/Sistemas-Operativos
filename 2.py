@@ -1,12 +1,23 @@
-while True:
-    numero = int(input("Escribe un número (negativo para salir): "))
-    
-    if numero < 0:
-        break 
+print("Vector2: media de temperaturas.")
 
-    suma = 0  
-    for i in range(1, numero + 1):
-        if numero % i == 0:
-            suma += i  
+Suma = 0
+Media = 0.0
+C = 0
+Temp = [] 
 
-    print(f"La suma de los divisores de {numero} es: {suma}")
+print("Ingrese cantidad de Temperaturas: ")
+N = int( input())
+
+for i in range(N):
+    temperatura = float( input("Ingrese Temperatura {0}: ".format(i + 1) ))
+    Temp.append(temperatura)
+    Suma = Suma + Temp[i]
+Media = Suma / N 
+
+for tempElement in Temp: 
+    if tempElement >= Media:
+        C = C + 1
+        print(tempElement)
+print("\nsalida: ")
+print ("La media es ", Media)
+print ("Total de temperaturas >= a la media es", C)

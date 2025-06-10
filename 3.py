@@ -1,17 +1,22 @@
-contador = 0 
+print("Vector3: ordenar y quitar elementos repetidos del vector.")
 
-for num in range(1, 1001):
-    if num < 2:
-        continue  
+VEC = [] 
+print("Ingrese número de elementos del vector")
+N = int( input())
 
-    primo = True
-    for i in range(2, num):
-        if num % i == 0:
-            primo = False
-            break
+if 1 <= N and N <= 200:
+    for i in range(1,N+1):
+        elemento = int( input("Ingrese Entero {0}: ".format(i)))
+    VEC.append(elemento)
+    i = 0
+    #TODO:
+    lista_nueva = [] 
+    for elemento in VEC:
 
-    if primo:
-        print(f"{num} es primo")
-        contador += 1
+        if elemento not in lista_nueva:
+            lista_nueva.append(elemento)
 
-print(f"Entre 1 y 1000 hay {contador} números primos.")
+lista_nueva.sort()
+
+print("\nsalida: ")
+print(lista_nueva)
